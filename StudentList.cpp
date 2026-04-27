@@ -18,8 +18,8 @@ StudentList::~StudentList() {
 
 // *******
 
-void StudentList::insertStudent(const char name[], const char matricNo[],
-                                const int &icNo, const char program[],
+void StudentList::insertStudent(const std::string& name, const std::string matricNo,
+                                const int &icNo, const std::string& program,
                                 const float &cgpa) {
-  Student newStudent
+  Student newStudent(name, matricNo, icNo, program, cgpa)
 }

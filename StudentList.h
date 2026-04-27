@@ -14,11 +14,10 @@ public:
   StudentList();
   ~StudentList();
 
-  void insertStudent(const char[], const char[], const int &, const char[],
-                     const float &);
-  void deleteStudent(const char[]);
-  const Student searchWithMatricNo(const char[]);
+  void insertStudent(const std::string&, const std::string&, const int &, const std::string&, const float &);
+  void deleteStudent(const std::string&);
+  const Student searchWithMatricNo(const std::string&);
   const Student searchWithIcNo(const int &);
   const float calcAverageCgpa();
-  const void displayStudents(const char[]);
+  const void displayStudents(const std::string&)
 };
