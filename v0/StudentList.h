@@ -19,5 +19,6 @@ public:
   const Student searchWithMatricNo(const std::string&);
   const Student searchWithIcNo(const int &);
   const float calcAverageCgpa();
-  const void displayStudents(const std::string&)
+  const void displayStudents(const std::string&);
+  const void displayStudents();
 };
