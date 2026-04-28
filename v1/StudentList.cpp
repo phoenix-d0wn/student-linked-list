@@ -46,7 +46,7 @@ void StudentList::deleteStudent(const std::string& matricNo) {
             head = head->next;
 
             // display the student that was deleted
-            std::cout << "\n\n*** Student [" << matricNo << "] " << name;
+            std::cout << "*** Student [" << matricNo << "] " << name;
             std::cout << " deleted ***";
 
             return;
@@ -62,7 +62,7 @@ void StudentList::deleteStudent(const std::string& matricNo) {
             currentNode->next = currentNode->next->next;
 
             // display the student that was deleted
-            std::cout << "\n*** Student [" << matricNo << "] " << name;
+            std::cout << "*** Student [" << matricNo << "] " << name;
             std::cout << "deleted ***";
 
             return;
@@ -71,17 +71,19 @@ void StudentList::deleteStudent(const std::string& matricNo) {
         currentNode = currentNode->next;
 
     }
+
+    std::cout << "*** Student with that matric number was not found... ***";
 }
 
 // ****
 
-const void StudentList::SearchStudent(const std::string& id) {
+const void StudentList::searchStudent(const std::string& id) {
 
     currentNode = head;
     while (currentNode) {
 
         if (currentNode->matricNo == id || currentNode->icNo == id) {
-            std::cout << "\n\n==========================";
+            std::cout << "==========================";
             std::cout << "\nSTUDENT INFORMATION";
             std::cout << "\n==========================";
 
@@ -92,7 +94,7 @@ const void StudentList::SearchStudent(const std::string& id) {
 
     }
 
-    std::cout << "\n\n*** Student information not found... ***";
+    std::cout << "*** Student information not found... ***";
 
 }
 
@@ -127,7 +129,7 @@ const void StudentList::printStudent(const int& index,
 
 const void StudentList::printStudents() {
 
-    std::cout << "\n\n==========================";
+    std::cout << "==========================";
     std::cout << "\nSTUDENTS";
     std::cout << "\n==========================";
 
@@ -147,7 +149,7 @@ const void StudentList::printStudents() {
 
 const void StudentList::printStudents(const std::string& program) {
 
-    std::cout << "\n\n==========================";
+    std::cout << "==========================";
     std::cout << "\nSTUDENTS IN " << program;
     std::cout << "\n==========================";
 
