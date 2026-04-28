@@ -2,11 +2,14 @@
 
 # include "Student.h"
 
-Student::Student(const std::string& n, const std::string& mn) {
-    name = n;
-    matricNo = mn;
+Student::Student(const std::string& Name, const std::string& MatricNo, 
+    const std::string& IcNo, const std::string& Program, 
+    const float& Cgpa) {
+    name        = Name;
+    matricNo    = MatricNo;
+    icNo        = IcNo;
+    program     = Program;
+    cgpa        = Cgpa;
 }
 
-Student::~Student() {
-    delete(next);
-}
+Student::~Student() {}

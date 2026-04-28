@@ -12,11 +12,15 @@ class Student {
 
         std::string name;
         std::string matricNo;
+        std::string icNo;
+        std::string program;
+        float cgpa;
 
         friend class StudentList;
 
     public:
-        Student(const std::string&, const std::string&);
+        Student(const std::string&, const std::string&, const std::string&,
+            const std::string&, const float&);
         ~Student();
 };
 
