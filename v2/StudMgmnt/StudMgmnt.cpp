@@ -45,7 +45,7 @@ const void StudMgmnt::menu() {
 
         switch (menuChoice) {
         
-            case 0  :   break;
+            case 0  :   return;
             
             case 1  :   insertStudent();
                         break;
