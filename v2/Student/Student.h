@@ -9,6 +9,7 @@ class Student {
 
     private:
         friend class StudentList;
+        friend class StudMgmnt;
 
         // student info
         std::string name;

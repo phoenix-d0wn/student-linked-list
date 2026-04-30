@@ -8,6 +8,8 @@
 class StudentList {
 
     private:
+        friend class StudMgmnt;
+
         int size;
 
         // pointers

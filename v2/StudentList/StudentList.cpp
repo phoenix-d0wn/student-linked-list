@@ -123,12 +123,12 @@ const bool StudentList::printStudents(std::string program) {
 
     else {
 
-        // size, head, tail check
-        std::cout << "\n\n";
-        std::cout << "Size: " << size;
-        std::cout << "\nHead: " << head->matricNo << ", ";
-        std::cout << "Tail: " << tail->matricNo;
-        std::cout << "\n\n";
+        // // size, head, tail check
+        // std::cout << "\n\n";
+        // std::cout << "Size: " << size;
+        // std::cout << "\nHead: " << head->matricNo << ", ";
+        // std::cout << "Tail: " << tail->matricNo;
+        // std::cout << "\n\n";
 
         currentNode = head;
         int i = 1;
@@ -177,3 +177,4 @@ const float StudentList::calcAverageCgpa() {
     }
 
 }
+
