@@ -3,7 +3,7 @@
 # ifndef STUDENTLIST_H
 # define STUDENTLIST_H
 
-# include "Student.h"
+# include "../Student/Student.h"
 
 class StudentList {
 
