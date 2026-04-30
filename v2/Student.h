@@ -19,7 +19,6 @@ class Student {
 
         // pointers
         Student* next;
-        Student* prev;
 
     public:
         Student(const std::string&, const std::string, 

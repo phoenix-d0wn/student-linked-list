@@ -22,9 +22,9 @@ class StudentList {
         void insertStudent(const std::string&, const std::string, 
             const std::string&, const std::string&, const float&);
         bool deleteStudent(const std::string&);
-        bool searchStudent(const std::string&);
-        bool printAllStudents();
-        float calcAverageCgpa();
+        const bool searchStudent(const std::string&);
+        const bool printStudents(std::string = "");
+        const float calcAverageCgpa();
 
 };
 

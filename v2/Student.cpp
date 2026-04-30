@@ -3,6 +3,7 @@
 # include "Student.h"
 
 # include <iostream>
+# include <iomanip>
 
 Student::Student(const std::string& Name, const std::string MatricNo, 
             const std::string& IcNo, const std::string& Program, 
@@ -13,10 +14,10 @@ Student::Student(const std::string& Name, const std::string MatricNo,
     icNo        = IcNo;
     program     = Program;
     
-    if (cgpa < 0.00)
+    if (Cgpa < 0.00)
         cgpa = 0.00;
 
-    else if (cgpa > 4.00)
+    else if (Cgpa > 4.00)
         cgpa = 4.00;
 
     else 
@@ -34,7 +35,8 @@ const void Student::printStudent() {
     std::cout << "\n\tMatric #  : " << matricNo;
     std::cout << "\n\tIC #      : " << icNo;
     std::cout << "\n\tProgram   : " << program;
-    std::cout << "\n\tCGPA      : " << cgpa;
+    std::cout << std::fixed << std::setprecision(2) 
+        << "\n\tCGPA      : " << cgpa;
 
 }
 
