@@ -24,7 +24,7 @@ const void StudentManagement::printMenu() {
     std::cout << "\n\t2. Delete Student Data";
     std::cout << "\n\t3. Search Student w/ Matric #";
     std::cout << "\n\t4. Search Student w/ IC #";
-    std::cout << "\n\t5. Print Students Based on Program";
+    std::cout << "\n\t5. Search Students w/ Program";
     std::cout << "\n\t6. Print All Students";
     std::cout << "\n\t7. Calculate Average CGPA";
     std::cout << "\n\n\t0. Quit System";
@@ -57,11 +57,11 @@ const void StudentManagement::menuLoop() {
             case 4  :   searchStudent();
                         break;
 
-            // case 5  :   printStudents();
-            //             break;
+            case 5  :   printStudents();
+                        break;
 
-            // case 6  :   printStudents();
-            //             break;
+            case 6  :   printStudents();
+                        break;
 
             // case 7  :   calcAverageCgpa();
             //             break;
@@ -108,12 +108,13 @@ const void StudentManagement::insertStudent() {
 
         studentList.insertStudent(name, matricNo, icNo, program, cgpa);
 
-        char insertAnother;
+        std::string insertAnother = "";
 
         std::cout << "\nInsert another? [Y/n]: ";
-        std::cin >> insertAnother;
+        std::cin.ignore();
+        std::getline(std::cin, insertAnother, '\n');
 
-        if (insertAnother == 'N' || insertAnother == 'n')
+        if (insertAnother == "N" || insertAnother == "n")
             break;
     }
 
@@ -141,11 +142,12 @@ const void StudentManagement::deleteStudent() {
 
         std::cout << "\n--------------------------";
 
-        char deleteAnother;
+        std::string deleteAnother = "";
         std::cout << "\nDelete another? [Y/n]: ";
-        std::cin >> deleteAnother;
+        std::cin.ignore();
+        std::getline(std::cin, deleteAnother, '\n');
 
-        if (deleteAnother == 'N' || deleteAnother == 'n')
+        if (deleteAnother == "N" || deleteAnother == "n")
             break;
 
     }
@@ -156,7 +158,6 @@ const void StudentManagement::searchStudent() {
 
     while (true) {
             
-        std::string id = "";
         std::cout << "\n--------------------------";
 
         if (menuChoice == 3) {
@@ -168,17 +169,53 @@ const void StudentManagement::searchStudent() {
             std::cout << "\nIC No.: ";
         }
 
+        std::string id = "";
         std::cin >> id;
+
         std::cout << "\n";
         studentList.searchStudent(id);
+
+        std::string searchAnother = "";
+        std::cout << "\n\nSearch another student? [Y/n]: ";
+        std::cin.ignore();
+        std::getline(std::cin, searchAnother, '\n');
+
+        if (searchAnother == "N" || searchAnother == "n")
+            break;
+
+    }
+
+}
+
+const void StudentManagement::printStudents() {
+
+    while (true) {
+
         std::cout << "\n--------------------------";
 
-        char searchAnother;
-        std::cout << "\n\nSearch another student? [Y/n]: ";
-        std::cin >> searchAnother;
+        if (menuChoice == 5) {
 
-        if (searchAnother == 'N' || searchAnother == 'n')
-            break;
+            std::string program = "";
+            std::cout << "\nSearch students using program";
+            std::cout << "\nProgram: ";
+            std::cin >> program;
+
+            studentList.printStudents(program);
+
+            std::string searchAnother = "";
+            std::cout << "\nSearch more? [Y/n]: ";
+            std::cin.ignore();
+            std::getline(std::cin, searchAnother, '\n');
+
+            if (searchAnother == "N" || searchAnother == "n")
+                break;
+
+        } else {
+
+            studentList.printStudents();
+            break;    
+
+        }
 
     }
 

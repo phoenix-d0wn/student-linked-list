@@ -18,6 +18,6 @@ class StudentManagement {
         const void insertStudent();
         const void deleteStudent();
         const void searchStudent();
-        // const void printStudents();
+        const void printStudents();
         // const void calcAverageCgpa();
 };
