@@ -35,6 +35,8 @@ A repository for BAXU1143 Data Structure &amp; Algorithm, Lab Assessment 2.
 #### 7. Calculate Average Student CGPA
 <img width="1080" height="608" alt="avg cgpa" src="https://github.com/user-attachments/assets/77de719e-348c-44cd-af2a-32ea88f0f978" />
 
+#### 8. Read from and Write to External file
+
 
 ## What I Learned ✏️
 #### 1. (Singly, Non-Circular) Linked Lists using Pointers in C++
