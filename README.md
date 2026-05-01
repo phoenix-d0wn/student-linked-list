@@ -3,6 +3,9 @@ A repository for BAXU1143 Data Structure &amp; Algorithm, Lab Assessment 2.
 
 ---
 ## How to Install & Run ⚙️
+#### 1. Download the Latest Package
+<img width="1080" height="608" alt="1  download pkg" src="https://github.com/user-attachments/assets/2ad08354-8c00-4c86-9f4f-f0aaf75579d5" />
+
 #### 1. Open Terminal in Project Directory
 #### 2. Run 'make' in the Terminal
 #### 3. Run './app' in the Terminal
@@ -27,7 +30,7 @@ A repository for BAXU1143 Data Structure &amp; Algorithm, Lab Assessment 2.
   - How to read from and write to external files
 #### 3. Basic Use of Makefile
   - How to use a Makefile to compile the program more easily
-#### 3. Coding Workflow
+#### 4. Coding Workflow
   - Testing robustness and functionality before moving on to the next step
 
 ---
