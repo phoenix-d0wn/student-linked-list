@@ -9,7 +9,7 @@ class StudMgmnt {
 
     private:
         StudentList studentList;
-        int menuChoice;
+        char menuChoice;
 
     public:
         StudMgmnt();
