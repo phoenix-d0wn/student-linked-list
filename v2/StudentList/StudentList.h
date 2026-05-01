@@ -1,33 +1,3 @@
-// StudentList.h
-
-# ifndef STUDENTLIST_H
-# define STUDENTLIST_H
-
-# include "../Student/Student.h"
-
-class StudentList {
-
-    private:
-        friend class StudMgmnt;
-
-        int size;
-
-        // pointers
-        Student* head;
-        Student* tail;
-        Student* currentNode;
-
-    public:
-        StudentList();
-        ~StudentList();
-
-        void insertStudent(const std::string&, const std::string, 
-            const std::string&, const std::string&, const float&);
-        bool deleteStudent(const std::string&);
-        const bool searchStudent(const std::string&);
-        const bool printStudents(std::string = "");
-        const float calcAverageCgpa();
-
-};
-
-# endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:a6ea539fc7ecec592c2a55bd3a53e71043f61a462a3f8c5a16e52b5b0182d2ca
+size 681

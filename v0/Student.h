@@ -1,27 +1,3 @@
-// Student.h
-
-#include <string>
-
-const int MAX_NAME_LENGTH = 30;
-const int MATRIC_NO_LENGTH = 10;
-const int PROGRAM_LENGTH = 4;
-
-class Student {
-private:
-  // pointers
-  Student* next;
-  Student* prev;
-
-  std::string name;
-  std::string matricNo;
-  int icNo;
-  std::string program;
-  float cgpa;
-
-  friend class StudentList;
-
-public:
-  Student(const std::string &, const std::string &, const int &,
-          const std::string &, const float &);
-  ~Student();
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:5fb362a7d52212526df0f9f599190c6f0d3626e4825c0418182d7773ace1b6bb
+size 463

@@ -1,33 +1,3 @@
-// Student.h
-
-# ifndef STUDENT_H
-# define STUDENT_H
-
-# include <string>
-
-class Student {
-
-    private:
-        friend class StudentList;
-        friend class StudMgmnt;
-
-        // student info
-        std::string name;
-        std::string matricNo;
-        std::string icNo;
-        std::string program;
-        float cgpa;
-
-        // pointers
-        Student* next;
-
-    public:
-        Student(const std::string&, const std::string, 
-            const std::string&, const std::string&, const float&);
-        ~Student();
-
-        const void printStudent();
-
-};
-
-# endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d8a45644b7704a8b4992be5ff7b3400d766bdc4476680516db489d3f83397b5
+size 573

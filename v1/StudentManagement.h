@@ -1,23 +1,3 @@
-// StudentManagement.h
-
-# include "StudentList.h"
-
-class StudentManagement {
-
-    private:
-        StudentList studentList;
-        int menuChoice;
-
-    public:
-        StudentManagement();
-        ~StudentManagement();
-
-        const void printMenu();
-        const void menuLoop();
-
-        const void insertStudent();
-        const void deleteStudent();
-        const void searchStudent();
-        const void printStudents();
-        // const void calcAverageCgpa();
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:6594d85ae572810637365679d52be7cceefea0fba6fbca2b88715dd8ae49d1c0
+size 472

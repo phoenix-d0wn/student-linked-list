@@ -1,15 +1,3 @@
-// Student.cpp
-
-# include "Student.h"
-
-Student::Student(const std::string& Name, const std::string& MatricNo, 
-    const std::string& IcNo, const std::string& Program, 
-    const float& Cgpa = 0.00) {
-    name        = Name;
-    matricNo    = MatricNo;
-    icNo        = IcNo;
-    program     = Program;
-    cgpa        = Cgpa;
-}
-
-Student::~Student() {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6ca6068384d4a5fd5e0fe253e2981c2a41d47dad922394ed4ee8b663e344abba
+size 353

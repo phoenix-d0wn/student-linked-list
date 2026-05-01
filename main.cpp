@@ -1,33 +1,3 @@
-// main.cpp
-
-# include "./v2/StudMgmnt/StudMgmnt.h"
-
-# include <iostream>
-
-int main() {
-
-    // StudentList studentList;
-
-    // studentList.insertStudent("John", "S1", "123", "BAXI", 5);
-    // studentList.insertStudent("Jane", "S2", "456", "BAXZ", 3);
-    // studentList.insertStudent("Joey", "S3", "789", "BAXZ", -1);
-
-    // studentList.printStudents();
-    // studentList.printStudents("BAXI");
-
-    // std::cout << "\n\nAvg CGPA: " << studentList.calcAverageCgpa();
-
-    // studentList.deleteStudent("S1");
-    // studentList.printStudents();
-
-    // std::cout << "\n\nAvg CGPA: " << studentList.calcAverageCgpa();
-
-    // studentList.searchStudent("S2");
-    // studentList.searchStudent("789");
-    // studentList.searchStudent("S0");
-
-    StudMgmnt app;
-
-    return 0;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:56ce17922073b317032a189cb253d6f1020724f772de589d574dfd2808648ab7
+size 780
