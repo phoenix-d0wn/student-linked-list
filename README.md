@@ -25,6 +25,8 @@ A repository for BAXU1143 Data Structure &amp; Algorithm, Lab Assessment 2.
   - How to traverse a linked list
 #### 2. File Handling in C++
   - How to read from and write to external files
+#### 3. Basic Use of Makefile
+  - How to use a Makefile to compile the program more easily
 #### 3. Coding Workflow
   - Testing robustness and functionality before moving on to the next step
 
