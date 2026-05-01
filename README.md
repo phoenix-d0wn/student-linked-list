@@ -1,9 +1,11 @@
 # student-linked-list
 A repository for BAXU1143 Data Structure &amp; Algorithm, Lab Assessment 2.
 
---
+---
 ## How to Install & Run ⚙️
-
+#### 1. Open Terminal in Project Directory
+#### 2. Run 'make' in the Terminal
+#### 3. Run './app' in the Terminal
 --
 ## Features ⭐
 
